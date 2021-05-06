@@ -38,7 +38,7 @@ jobs:
       - name: deploy
         uses: deliverybot/helm@v1
         with:
-          helm: helm3
+          helm: helm
           release: bookinfo-${{ env.ENV_NAME }}-ratings
           namespace: student60-bookinfo-${{ env.ENV_NAME }}
           chart: k8s/helm
