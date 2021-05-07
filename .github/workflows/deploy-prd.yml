@@ -22,7 +22,7 @@ jobs:
       - name: deploy
         uses: deliverybot/helm@v1
         with:
-          helm: helm
+          helm: helm3
           release: bookinfo-prd-ratings
           namespace: student60-bookinfo-prd
           chart: k8s/helm
